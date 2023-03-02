@@ -2,8 +2,6 @@
 {
     public class RifleAndMachineGunCartridge : Cartridge
     {
-        public RifleAndMachineGunCartridge(int caliber) : base(caliber)
-        {
-        }
+        public override int Caliber => throw new NotImplementedException();
     }
 }

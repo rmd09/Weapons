@@ -2,11 +2,11 @@
 {
     public class Rifle : Weapon
     {
-        public override int Damage { get; } = 12;
+        public override bool IsAutoRechargable { get; }
 
-        public override void Shoot()
+        static Rifle()
         {
-            
+            Information += "\nВинтовка";
         }
     }
 }
