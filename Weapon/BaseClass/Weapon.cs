@@ -10,14 +10,14 @@
         {
             isRecharged = true;
         }
-        public override void InsertMagazine(Magazine magazine)
+        public override void InsertMagazine(Magazine<Cartridge> magazine)
         {
             if (this.magazine == null && MagazineSize == magazine.MagazineSize)
             {
                 this.magazine = magazine;
             }
         }
-        public override Magazine TakeMagazine()
+        public override Magazine<Cartridge> TakeMagazine()
         {
             var resMagazine = magazine;
             magazine = null;

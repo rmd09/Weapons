@@ -1,14 +1,17 @@
 ﻿namespace Weapons
 {
-    public class Magazine
+    public class Magazine<T> where T : Cartridge
     {
-        private Cartridge[] cartridges;
-        public int MagazineSize { get; private set; }
+        private T[] cartridges;
+        public int MagazineSize { get; private set; } = 0;
 
         public Magazine(Cartridge[] cartridges)
         {
-            this.cartridges = cartridges;
-            MagazineSize = cartridges.Length;
+            if (cartridges is T[])
+            {
+                this.cartridges = (T[])cartridges;
+                MagazineSize = cartridges.Length;
+            }
         }
     }
 }

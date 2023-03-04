@@ -9,7 +9,7 @@
 
         void Shoot();
         void Recharge();
-        void InsertMagazine(Magazine magazine);
-        Magazine TakeMagazine();
+        void InsertMagazine(Magazine<Cartridge> magazine);
+        Magazine<Cartridge> TakeMagazine();
     }
 }

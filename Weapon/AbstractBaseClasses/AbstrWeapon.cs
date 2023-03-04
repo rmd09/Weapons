@@ -9,22 +9,22 @@
         public abstract int MagazineSize { get; }
         public static string Information { get; protected set; } = "Тип инвентаря - ОРУЖИЕ";
         protected bool isRecharged = false;
-        protected Magazine magazine;
-        protected event Shooting shooting;
+        protected Magazine<Cartridge> magazine;
+        private static event Shooting shooting = () => { };
 
         public virtual void Shoot()
         {
             if (isRecharged)
             {
-                this?.shooting();
+                shooting();
             }
         }
         public abstract void Recharge();
-        public abstract void InsertMagazine(Magazine magazine);
-        public abstract Magazine TakeMagazine();
-        public void SetShooting(Shooting shooting)
+        public abstract void InsertMagazine(Magazine<Cartridge> magazine);
+        public abstract Magazine<Cartridge> TakeMagazine();
+        public static void SetShooting(Shooting shooting)
         {
-            this.shooting = shooting;
+            AbstrWeapon.shooting = shooting ?? (() => { });
         }
         public override string ToString()
         {
