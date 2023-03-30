@@ -1,0 +1,12 @@
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\obj\Debug\net6.0\Weapons.csproj.AssemblyReference.cache
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\obj\Debug\net6.0\Weapons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\obj\Debug\net6.0\Weapons.AssemblyInfoInputs.cache
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\obj\Debug\net6.0\Weapons.AssemblyInfo.cs
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\obj\Debug\net6.0\Weapons.csproj.CoreCompileInputs.cache
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\bin\Debug\net6.0\Weapons.deps.json
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\bin\Debug\net6.0\Weapons.dll
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\bin\Debug\net6.0\Weapons.pdb
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\obj\Debug\net6.0\Weapons.dll
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\obj\Debug\net6.0\refint\Weapons.dll
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\obj\Debug\net6.0\Weapons.pdb
+C:\Users\Администратор\Desktop\C#\Libraries\Weapons\obj\Debug\net6.0\ref\Weapons.dll
