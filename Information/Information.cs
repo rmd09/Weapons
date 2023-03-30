@@ -2,15 +2,15 @@
 {
     public class Info
     {
-        public string GlobalType { get; private set; }
+        public GlobalType GlobalType { get; private set; } = GlobalType.None;
         public string ItemType { get; private set; }
         public string Description { get; private set; }
 
-        public Info(string globalType)
+        public Info(GlobalType globalType)
         {
             GlobalType = globalType;
         }
-        public Info(string globalType, string itemType, string description)
+        public Info(GlobalType globalType, string itemType, string description)
         {
             GlobalType = globalType;
             ItemType = itemType;

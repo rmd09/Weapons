@@ -1,6 +1,6 @@
 ﻿namespace Weapons
 {
-    public class RifleAndMachineGunPatron : Patron
+    public class MachinGunPatron : Patron
     {
         public override int Caliber => throw new NotImplementedException();
     }
