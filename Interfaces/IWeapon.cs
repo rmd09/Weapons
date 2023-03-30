@@ -5,6 +5,7 @@
         int Damage { get; }
         bool IsAutoRechargable { get; }
         int MagazineSize { get; }
+        TypePatron TypePatron { get; }
 
         void Shoot();
         void Recharge();
