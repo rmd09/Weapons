@@ -10,6 +10,11 @@
         public override int MagazineSize { get; } = 1;
         public override TypePatron TypePatron { get; } = TypePatron.BaseClassPatron;
 
+        public Weapon(EventHandler<ShootingArgs> shooting) : base(shooting)
+        {
+
+        }
+
         public override void Recharge()
         {
             isRecharged = true;

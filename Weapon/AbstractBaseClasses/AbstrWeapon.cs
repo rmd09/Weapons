@@ -1,7 +1,5 @@
 ﻿namespace Weapons
 {
-    public delegate void Shooting();
-
     public abstract class AbstrWeapon : IWeapon
     {
         private const GlobalType GLOBAL_TYPE = GlobalType.Оружее;
@@ -15,19 +13,28 @@
         protected bool isRecharged = false;
         protected Magazine magazine;
         public abstract TypePatron TypePatron { get; }
-        public static event Shooting Shooting = () => { };
+        public event EventHandler<ShootingArgs> Shooting = (s, e) => { };
 
-        public AbstrWeapon()
+        public AbstrWeapon(EventHandler<ShootingArgs> shooting)
         {
             magazine = new Magazine(MagazineSize);
             Information = new Info(GLOBAL_TYPE, itemType, description);
+            Shooting = shooting;
         }
 
         public void Shoot()
         {
             if (isRecharged)
             {
-                Shooting();
+                try
+                {
+                    magazine.Shoot();
+                    ShootingArgs eventArgs = new ShootingArgs(Damage, TypePatron);
+                    Shooting(this, eventArgs);
+                }
+                catch 
+                {
+                }
             }
         }
         public abstract void Recharge();
