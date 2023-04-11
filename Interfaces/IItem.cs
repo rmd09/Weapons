@@ -2,7 +2,6 @@
 {
     public interface IItem
     {
-        public Info Information { get; }
-        ////////////////////
+        Info Information { get; }
     }
 }

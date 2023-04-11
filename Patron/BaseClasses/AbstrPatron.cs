@@ -4,17 +4,18 @@
     {
         private const GlobalType GLOBAL_TYPE_CARTRIDGE = GlobalType.Патрон;
 
-        public abstract int Caliber { get; }
+        public abstract float Caliber { get; }
 
         #region Information
         public Info Information { get; private set; }
         protected abstract string itemType { get; }
         protected abstract string description { get; }
+        public abstract TypePatron TypePatron { get; }
         #endregion
 
         public AbstrPatron()
         {
-            Information = new Info(GLOBAL_TYPE_CARTRIDGE, itemType, description);
+            Information = new WeaponAndPatronInfo(GLOBAL_TYPE_CARTRIDGE, itemType, description, TypePatron);
         }
 
         public override string ToString()

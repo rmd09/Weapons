@@ -5,10 +5,11 @@
         int Damage { get; }
         bool IsAutoRechargable { get; }
         int MagazineSize { get; }
+        int NumberOfPatrons { get; } //Кол-во патронов в данный момент
         TypePatron TypePatron { get; }
 
         void Shoot();
-        void Recharge();
+        void Recharge(); //Перезарядка
         void InsertMagazine(Magazine magazine);
         Magazine TakeMagazine();
     }

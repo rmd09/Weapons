@@ -41,7 +41,7 @@
             else if (typePatron == typeof(MachinGunPatron))
                 TypePatron = TypePatron.MachineGunPatron;
             else if (typePatron == typeof(Patron))
-                TypePatron = TypePatron.BaseClassPatron;
+                TypePatron = TypePatron.BasePatron;
         }
 
         public void Shoot()

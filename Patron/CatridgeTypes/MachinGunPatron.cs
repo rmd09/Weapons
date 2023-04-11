@@ -2,6 +2,7 @@
 {
     public class MachinGunPatron : Patron
     {
-        public override int Caliber => throw new NotImplementedException();
+        public override TypePatron TypePatron { get; } = TypePatron.MachineGunPatron;
+        public override float Caliber { get; } = 12.7f;
     }
 }

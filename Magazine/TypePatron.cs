@@ -1,8 +1,8 @@
 ﻿namespace Weapons
 {
     public enum TypePatron
-    {
-        BaseClassPatron,
+    { 
+        BasePatron,
         GunPatron,
         RevolverPatron,
         RiflePatron,
