@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "n4JPCq9fXANCCS1iSY5Hhyp6UkaQqsX6c85ZKhKh5ifUNnj5iobxheNTIndzQI5R0fhbIN5Y00IOOGeRsLdsCQ==",
+  "dgSpecHash": "V7kUsqYRFYw4iA+Y5iJGMjyC78rzYoxW1aZUZxt55dB9klC7r/jOAeDeb5MPtID2l+tZc7rnx+fKmQtmVWOggg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Администратор\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj",
+  "projectFilePath": "C:\\Users\\rmd09\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Администратор\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\rmd09\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

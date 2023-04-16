@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Администратор\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj": {}
+    "C:\\Users\\rmd09\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Администратор\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj": {
+    "C:\\Users\\rmd09\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Администратор\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj",
+        "projectUniqueName": "C:\\Users\\rmd09\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj",
         "projectName": "Weapons",
-        "projectPath": "C:\\Users\\Администратор\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj",
-        "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Администратор\\Desktop\\C#\\Libraries\\Weapons\\obj\\",
+        "projectPath": "C:\\Users\\rmd09\\Desktop\\C#\\Libraries\\Weapons\\Weapons.csproj",
+        "packagesPath": "C:\\Users\\rmd09\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rmd09\\Desktop\\C#\\Libraries\\Weapons\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rmd09\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

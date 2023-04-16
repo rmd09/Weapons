@@ -24,7 +24,7 @@
                     return (9f, "Пистолетный патрон");
 
                 case TypePatron.RevolverPatron:
-                    return (7.62f, "револьверный патрон");
+                    return (7.14f, "револьверный патрон");
 
                 case TypePatron.RiflePatron:
                     return (7.62f, "Винтовочный патрон");

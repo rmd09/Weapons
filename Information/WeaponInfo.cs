@@ -15,7 +15,7 @@
         {
             var CaliberAndTypePatron = Patron.GetCaliberAndTypePatron(TypePatron);
 
-            return $"Инвентарь: {GlobalType}\nТип: {ItemType}\nОписание: {Description}\nТип патрона: {CaliberAndTypePatron.Item2}\nКалибр: {CaliberAndTypePatron.Item1}";
+            return $"Инвентарь: {GlobalType}\nТип: {ItemType}\nОписание: {Description}\nТип патрона: {CaliberAndTypePatron.Item2}\nКалибр: {CaliberAndTypePatron.Item1} мм";
         }
     }
 }

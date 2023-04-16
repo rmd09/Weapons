@@ -6,7 +6,7 @@ namespace Weapons
     {
         protected override string itemType { get; }
         protected override string description { get; }
-        protected static string pathJsonDescription { get; } = $"{Environment.CurrentDirectory}\\Descriptions.json"; //Файл должен быть в папке исполняемого файла
+        protected static string pathJsonDescription { get; } = $"{Environment.CurrentDirectory}\\Descriptions.json"; //Json должен быть в папке исполняемого файла
 
         public override int Damage { get; } = 1;
         public override bool IsAutoRechargable { get; } = false;
