@@ -2,8 +2,8 @@
 {
     public class Patron : AbstrPatron
     {
-        public override float Caliber { get; } = 1;
-        public override TypePatron TypePatron { get; } = TypePatron.BasePatron;
+        public override float Caliber => 1;
+        public override TypePatron TypePatron => TypePatron.BasePatron;
 
         protected override string itemType { get; }
         protected override string description { get; }

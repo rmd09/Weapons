@@ -2,7 +2,7 @@
 {
     public class RevolverPatron : Patron
     {
-        public override TypePatron TypePatron { get; } = TypePatron.RevolverPatron;
-        public override float Caliber { get; } = 7.62f;
+        public override TypePatron TypePatron => TypePatron.RevolverPatron;
+        public override float Caliber => 7.62f;
     }
 }
