@@ -2,7 +2,7 @@
 {
     public abstract class AbstrWeapon : IWeapon
     {
-        protected const GlobalType GLOBAL_TYPE = GlobalType.Оружее;
+        protected const GlobalType GLOBAL_TYPE = GlobalType.Оружие;
         protected abstract string itemType { get; }
         protected abstract string description { get; }
 

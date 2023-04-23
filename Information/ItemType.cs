@@ -3,7 +3,7 @@
     public enum GlobalType
     {
         None = 0,
-        Оружее,
+        Оружие,
         Патрон
     }
 }
