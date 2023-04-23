@@ -3,6 +3,7 @@
     public interface IWeapon : IItem
     {
         int Damage { get; }
+        float Caliber { get; }
         bool IsAutoRechargable { get; }
         int MagazineSize { get; }
         int NumberOfPatrons { get; } //Кол-во патронов в данный момент

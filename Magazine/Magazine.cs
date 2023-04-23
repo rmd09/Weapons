@@ -2,46 +2,46 @@
 {
     public class Magazine
     {
-        private Stack<AbstrPatron> cartridges;
-        private Type typePatron;
-        public int MagazineSize { get; private set; } = 0;
+        private Stack<Patron> cartridges;
+        public int MagazineSize { get; private set; }
         public TypePatron TypePatron { get; private set; }
 
-        public Magazine(int magazineSize)
+        public Magazine(int magazineSize, TypePatron typePatron, float caliber = -1f)
         {
-            MagazineSize = magazineSize;
-            cartridges = new Stack<AbstrPatron>();
-        }
+            if (caliber == -1f)
+                caliber = ChooseDefaultCaliber(typePatron);
 
-        public void FillMagazine<T>() where T : AbstrPatron
-        {
-            cartridges.Clear();
-            typePatron = typeof(T);
+            TypePatron = typePatron;
 
-            T[] newCartridges = new T[MagazineSize];
-            foreach (AbstrPatron item in newCartridges)
+            cartridges = new Stack<Patron>(MagazineSize);
+            for (int i = 0; i < MagazineSize; i++)
             {
-                cartridges.Push(item);
+                cartridges.Push(new Patron(caliber, typePatron));
             }
-
-            IdentificateTypePatron();
         }
 
-        private void IdentificateTypePatron() 
+        private float ChooseDefaultCaliber(TypePatron typePatron)
         {
-            if (typePatron.BaseType != typeof(Patron) && typePatron.BaseType != typeof(AbstrPatron))
-                throw new ArgumentException("Тип не наследуется от Patron");
+            switch (typePatron)
+            {
+                case TypePatron.BasePatron:
+                    return 1f;
 
-            if (typePatron == typeof(GunPatron))
-                TypePatron = TypePatron.GunPatron;
-            else if (typePatron == typeof(RevolverPatron))
-                TypePatron = TypePatron.RevolverPatron;
-            else if (typePatron == typeof(RiflePatron))
-                TypePatron = TypePatron.RevolverPatron;
-            else if (typePatron == typeof(MachinGunPatron))
-                TypePatron = TypePatron.MachineGunPatron;
-            else if (typePatron == typeof(Patron))
-                TypePatron = TypePatron.BasePatron;
+                case TypePatron.GunPatron:
+                    return 9f;
+
+                case TypePatron.RevolverPatron:
+                    return 7.14f;
+
+                case TypePatron.RiflePatron:
+                    return 7.62f;
+
+                case TypePatron.MachineGunPatron:
+                    return 12.7f;
+
+                default:
+                    throw new ArgumentNullException();
+            }
         }
 
         public void Shoot()

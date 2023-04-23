@@ -7,6 +7,7 @@
         protected abstract string description { get; }
 
         public abstract int Damage { get; }
+        public abstract float Caliber { get; }
         public abstract bool IsAutoRechargable { get; }
         public abstract int MagazineSize { get; }
         public int NumberOfPatrons { get; private set; }
@@ -19,7 +20,7 @@
 
         public AbstrWeapon(EventHandler<ShootingArgs> shooting)
         {
-            magazine = new Magazine(MagazineSize);
+            magazine = new Magazine(MagazineSize, TypePatron, Caliber);
             NumberOfPatrons = MagazineSize;
             if (shooting != null)
                 Shooting = shooting;
