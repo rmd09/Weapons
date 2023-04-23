@@ -1,5 +1,6 @@
 ﻿namespace Weapons
 {
+    //Тут его не будет
     public abstract class AbstrPatron : IItem
     {
         private const GlobalType GLOBAL_TYPE_CARTRIDGE = GlobalType.Патрон;
