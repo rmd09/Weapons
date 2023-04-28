@@ -5,7 +5,7 @@
         public override int MagazineSize => 7;
 
         private const string descriptionKey = "NaganaSystemRevolver";
-        protected override string description => SetDescription(pathJsonDescription, descriptionKey);
+        public override string Description => SetDescription(pathJsonDescription, descriptionKey);
         public NaganaSystemRevolver(EventHandler<ShootingArgs> shooting) : base(shooting)
         {
         }

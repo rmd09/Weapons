@@ -4,8 +4,8 @@ namespace Weapons
 {
     public class Weapon : AbstrWeapon
     {
-        protected override string itemType { get; }
-        protected override string description { get; }
+        public override string ItemType { get; }
+        public override string Description { get; }
         protected static string pathJsonDescription { get; } = $"{Environment.CurrentDirectory}\\Descriptions.json"; //Json должен быть в папке исполняемого файла
 
         public override int Damage => 1; 
@@ -16,7 +16,6 @@ namespace Weapons
 
         public Weapon(EventHandler<ShootingArgs> shooting) : base(shooting)
         {
-            Information = new WeaponAndPatronInfo(GLOBAL_TYPE, itemType, description, TypePatron);
         }
 
         protected static string SetDescription(string pathJsonDescription, string descriptionKey)

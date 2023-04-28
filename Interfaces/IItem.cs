@@ -2,6 +2,8 @@
 {
     public interface IItem
     {
-        Info Information { get; }
+        GlobalType GlobalType { get; }
+        string ItemType { get; }
+        string Description { get; }
     }
 }

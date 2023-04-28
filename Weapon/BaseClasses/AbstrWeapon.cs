@@ -2,16 +2,16 @@
 {
     public abstract class AbstrWeapon : IWeapon
     {
-        protected const GlobalType GLOBAL_TYPE = GlobalType.Оружие;
-        protected abstract string itemType { get; }
-        protected abstract string description { get; }
+        public GlobalType GlobalType { get; } = GlobalType.Оружие;
+        public abstract string ItemType { get; }
+        public abstract string Description { get; }
 
         public abstract int Damage { get; }
         public abstract float Caliber { get; }
         public abstract bool IsAutoRechargable { get; }
         public abstract int MagazineSize { get; }
         public int NumberOfPatrons { get; private set; }
-        public Info Information { get; protected set; }
+
         protected bool isRecharged = false;
         protected Magazine magazine;
         public abstract TypePatron TypePatron { get; }
@@ -59,7 +59,7 @@
         }
         public override string ToString()
         {
-            return Information.ToString();
+            return $"Предмет: {GlobalType}\nТип: {ItemType}\nОписание: {Description}";
         }
     }
 }
