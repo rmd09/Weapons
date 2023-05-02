@@ -12,6 +12,7 @@
                 caliber = ChooseDefaultCaliber(typePatron);
 
             TypePatron = typePatron;
+            MagazineSize = magazineSize;
 
             cartridges = new Stack<Patron>(MagazineSize);
             for (int i = 0; i < MagazineSize; i++)
