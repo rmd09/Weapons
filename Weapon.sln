@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weapons", "Weapon\Weapons.c
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program", "Program\Program.csproj", "{D5E76290-546B-464F-AA96-5F260EA5AE7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interactive", "Interactive\Interactive.csproj", "{1C5BE6EE-0DDD-47B8-BAE7-8C165FC2D852}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D5E76290-546B-464F-AA96-5F260EA5AE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5E76290-546B-464F-AA96-5F260EA5AE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5E76290-546B-464F-AA96-5F260EA5AE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C5BE6EE-0DDD-47B8-BAE7-8C165FC2D852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5BE6EE-0DDD-47B8-BAE7-8C165FC2D852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5BE6EE-0DDD-47B8-BAE7-8C165FC2D852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5BE6EE-0DDD-47B8-BAE7-8C165FC2D852}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
 ﻿namespace Program
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -32,63 +32,78 @@
             TreeNode treeNode2 = new TreeNode("Пистолет Макарова");
             TreeNode treeNode3 = new TreeNode("Пистолеты", new TreeNode[] { treeNode1, treeNode2 });
             TreeNode treeNode4 = new TreeNode("Револьвер системы Нагана");
-            TreeNode treeNode5 = new TreeNode("Револьверы", new TreeNode[] { treeNode4 });
-            TreeNode treeNode6 = new TreeNode("Винтовки");
-            TreeNode treeNode7 = new TreeNode("Автоматы");
-            TreeNode treeNode8 = new TreeNode("Пулемёты");
-            TreeNode treeNode9 = new TreeNode("Оружие", new TreeNode[] { treeNode3, treeNode5, treeNode6, treeNode7, treeNode8 });
-            splitContainer1 = new SplitContainer();
-            groupBox1 = new GroupBox();
-            treeView1 = new TreeView();
-            label2 = new Label();
-            label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
-            splitContainer1.Panel1.SuspendLayout();
-            splitContainer1.Panel2.SuspendLayout();
-            splitContainer1.SuspendLayout();
-            groupBox1.SuspendLayout();
+            TreeNode treeNode5 = new TreeNode("Револьвер Веблера");
+            TreeNode treeNode6 = new TreeNode("Револьверы", new TreeNode[] { treeNode4, treeNode5 });
+            TreeNode treeNode7 = new TreeNode("BarrettM82");
+            TreeNode treeNode8 = new TreeNode("Снайперская винтовка Драгунова");
+            TreeNode treeNode9 = new TreeNode("Винтовки", new TreeNode[] { treeNode7, treeNode8 });
+            TreeNode treeNode10 = new TreeNode("АС Вал");
+            TreeNode treeNode11 = new TreeNode("АК-47");
+            TreeNode treeNode12 = new TreeNode("Автоматы", new TreeNode[] { treeNode10, treeNode11 });
+            TreeNode treeNode13 = new TreeNode("ДТ");
+            TreeNode treeNode14 = new TreeNode("Пулемёт Максим");
+            TreeNode treeNode15 = new TreeNode("Пулемёты", new TreeNode[] { treeNode13, treeNode14 });
+            TreeNode treeNode16 = new TreeNode("Оружие", new TreeNode[] { treeNode3, treeNode6, treeNode9, treeNode12, treeNode15 });
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            splitMain = new SplitContainer();
+            groupChoose = new GroupBox();
+            treeWeapon = new TreeView();
+            groupDescription = new GroupBox();
+            splitDescription = new SplitContainer();
+            lChoose = new Label();
+            lDescription = new Label();
+            bInteractive = new Button();
+            ((System.ComponentModel.ISupportInitialize)splitMain).BeginInit();
+            splitMain.Panel1.SuspendLayout();
+            splitMain.Panel2.SuspendLayout();
+            splitMain.SuspendLayout();
+            groupChoose.SuspendLayout();
+            groupDescription.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitDescription).BeginInit();
+            splitDescription.Panel1.SuspendLayout();
+            splitDescription.Panel2.SuspendLayout();
+            splitDescription.SuspendLayout();
             SuspendLayout();
             // 
-            // splitContainer1
+            // splitMain
             // 
-            splitContainer1.BorderStyle = BorderStyle.Fixed3D;
-            splitContainer1.Dock = DockStyle.Fill;
-            splitContainer1.IsSplitterFixed = true;
-            splitContainer1.Location = new Point(0, 0);
-            splitContainer1.Name = "splitContainer1";
+            splitMain.BorderStyle = BorderStyle.Fixed3D;
+            splitMain.Dock = DockStyle.Fill;
+            splitMain.IsSplitterFixed = true;
+            splitMain.Location = new Point(0, 0);
+            splitMain.Name = "splitMain";
             // 
-            // splitContainer1.Panel1
+            // splitMain.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(groupBox1);
+            splitMain.Panel1.Controls.Add(groupChoose);
             // 
-            // splitContainer1.Panel2
+            // splitMain.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(label2);
-            splitContainer1.Panel2.Controls.Add(label1);
-            splitContainer1.Size = new Size(931, 494);
-            splitContainer1.SplitterDistance = 294;
-            splitContainer1.TabIndex = 3;
+            splitMain.Panel2.Controls.Add(groupDescription);
+            splitMain.Size = new Size(931, 494);
+            splitMain.SplitterDistance = 306;
+            splitMain.TabIndex = 3;
             // 
-            // groupBox1
+            // groupChoose
             // 
-            groupBox1.Controls.Add(treeView1);
-            groupBox1.Dock = DockStyle.Fill;
-            groupBox1.Font = new Font("Segoe UI Semibold", 13.5F, FontStyle.Bold, GraphicsUnit.Point);
-            groupBox1.Location = new Point(0, 0);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(290, 490);
-            groupBox1.TabIndex = 3;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Выбор оружия";
+            groupChoose.Controls.Add(treeWeapon);
+            groupChoose.Dock = DockStyle.Fill;
+            groupChoose.Font = new Font("Segoe UI Semibold", 13.5F, FontStyle.Bold, GraphicsUnit.Point);
+            groupChoose.Location = new Point(0, 0);
+            groupChoose.Name = "groupChoose";
+            groupChoose.Size = new Size(302, 490);
+            groupChoose.TabIndex = 3;
+            groupChoose.TabStop = false;
+            groupChoose.Text = "Выбор оружия";
             // 
-            // treeView1
+            // treeWeapon
             // 
-            treeView1.BackColor = SystemColors.Menu;
-            treeView1.Dock = DockStyle.Fill;
-            treeView1.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            treeView1.Location = new Point(3, 33);
-            treeView1.Name = "treeView1";
-            treeNode1.Name = "Glok17";
+            treeWeapon.BackColor = SystemColors.Menu;
+            treeWeapon.Dock = DockStyle.Fill;
+            treeWeapon.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            treeWeapon.Location = new Point(3, 33);
+            treeWeapon.Name = "treeWeapon";
+            treeNode1.Name = "Glock17";
             treeNode1.Text = "Глок 17";
             treeNode2.Name = "GunMakarova";
             treeNode2.Text = "Пистолет Макарова";
@@ -96,64 +111,133 @@
             treeNode3.Text = "Пистолеты";
             treeNode4.Name = "NaganaSystemRevolver";
             treeNode4.Text = "Револьвер системы Нагана";
-            treeNode5.Name = "Revolvers";
-            treeNode5.Text = "Револьверы";
-            treeNode6.Name = "Rifles";
-            treeNode6.Text = "Винтовки";
-            treeNode7.Name = "AssaultRifles";
-            treeNode7.Text = "Автоматы";
-            treeNode8.Name = "MachineGuns";
-            treeNode8.Text = "Пулемёты";
-            treeNode9.Name = "Weapon";
-            treeNode9.Text = "Оружие";
-            treeView1.Nodes.AddRange(new TreeNode[] { treeNode9 });
-            treeView1.Size = new Size(284, 454);
-            treeView1.TabIndex = 0;
+            treeNode5.Name = "WebleyRevolver";
+            treeNode5.Text = "Револьвер Веблера";
+            treeNode6.Name = "Revolvers";
+            treeNode6.Text = "Револьверы";
+            treeNode7.Name = "BarrettM82";
+            treeNode7.Text = "BarrettM82";
+            treeNode8.Name = "DragunovSniperRifle";
+            treeNode8.Text = "Снайперская винтовка Драгунова";
+            treeNode9.Name = "Rifles";
+            treeNode9.Text = "Винтовки";
+            treeNode10.Name = "AC_VAL";
+            treeNode10.Text = "АС Вал";
+            treeNode11.Name = "AK-47";
+            treeNode11.Text = "АК-47";
+            treeNode12.Name = "AssaultRifles";
+            treeNode12.Text = "Автоматы";
+            treeNode13.Name = "DT";
+            treeNode13.Text = "ДТ";
+            treeNode14.Name = "MaksimMachineGun";
+            treeNode14.Text = "Пулемёт Максим";
+            treeNode15.Name = "MachineGuns";
+            treeNode15.Text = "Пулемёты";
+            treeNode16.Name = "Weapon";
+            treeNode16.Text = "Оружие";
+            treeWeapon.Nodes.AddRange(new TreeNode[] { treeNode16 });
+            treeWeapon.Size = new Size(296, 454);
+            treeWeapon.TabIndex = 0;
+            treeWeapon.AfterSelect += treeWeapon_AfterSelect;
             // 
-            // label2
+            // groupDescription
             // 
-            label2.Dock = DockStyle.Top;
-            label2.Location = new Point(0, 38);
-            label2.Name = "label2";
-            label2.Size = new Size(629, 120);
-            label2.TabIndex = 1;
-            label2.Text = "Тип: ......\r\nОписание: .....\r\n";
+            groupDescription.Controls.Add(splitDescription);
+            groupDescription.Dock = DockStyle.Fill;
+            groupDescription.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            groupDescription.Location = new Point(0, 0);
+            groupDescription.Name = "groupDescription";
+            groupDescription.Size = new Size(617, 490);
+            groupDescription.TabIndex = 0;
+            groupDescription.TabStop = false;
+            groupDescription.Text = "Название";
             // 
-            // label1
+            // splitDescription
             // 
-            label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(629, 38);
-            label1.TabIndex = 0;
-            label1.Text = "Название";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            splitDescription.BorderStyle = BorderStyle.Fixed3D;
+            splitDescription.Dock = DockStyle.Fill;
+            splitDescription.IsSplitterFixed = true;
+            splitDescription.Location = new Point(3, 43);
+            splitDescription.Name = "splitDescription";
+            splitDescription.Orientation = Orientation.Horizontal;
             // 
-            // Form1
+            // splitDescription.Panel1
+            // 
+            splitDescription.Panel1.Controls.Add(lChoose);
+            splitDescription.Panel1.Controls.Add(lDescription);
+            // 
+            // splitDescription.Panel2
+            // 
+            splitDescription.Panel2.Controls.Add(bInteractive);
+            splitDescription.Size = new Size(611, 444);
+            splitDescription.SplitterDistance = 363;
+            splitDescription.TabIndex = 0;
+            // 
+            // lChoose
+            // 
+            lChoose.AutoSize = true;
+            lChoose.ForeColor = SystemColors.ControlDarkDark;
+            lChoose.Location = new Point(165, 141);
+            lChoose.Name = "lChoose";
+            lChoose.Size = new Size(284, 41);
+            lChoose.TabIndex = 1;
+            lChoose.Text = "Выберите оружие";
+            // 
+            // lDescription
+            // 
+            lDescription.Dock = DockStyle.Fill;
+            lDescription.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            lDescription.Location = new Point(0, 0);
+            lDescription.Name = "lDescription";
+            lDescription.Size = new Size(607, 359);
+            lDescription.TabIndex = 0;
+            lDescription.Text = "Описание";
+            // 
+            // bInteractive
+            // 
+            bInteractive.Enabled = false;
+            bInteractive.Location = new Point(168, 14);
+            bInteractive.Name = "bInteractive";
+            bInteractive.Size = new Size(281, 54);
+            bInteractive.TabIndex = 0;
+            bInteractive.Text = "Интерактив";
+            bInteractive.UseVisualStyleBackColor = true;
+            bInteractive.Click += bInteractive_Click;
+            // 
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(931, 494);
-            Controls.Add(splitContainer1);
+            Controls.Add(splitMain);
             FormBorderStyle = FormBorderStyle.Fixed3D;
-            Name = "Form1";
-            ShowIcon = false;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Каталог оружия";
-            splitContainer1.Panel1.ResumeLayout(false);
-            splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
-            splitContainer1.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
+            splitMain.Panel1.ResumeLayout(false);
+            splitMain.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitMain).EndInit();
+            splitMain.ResumeLayout(false);
+            groupChoose.ResumeLayout(false);
+            groupDescription.ResumeLayout(false);
+            splitDescription.Panel1.ResumeLayout(false);
+            splitDescription.Panel1.PerformLayout();
+            splitDescription.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitDescription).EndInit();
+            splitDescription.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private SplitContainer splitContainer1;
-        private GroupBox groupBox1;
-        private TreeView treeView1;
-        private Label label2;
-        private Label label1;
+        private SplitContainer splitMain;
+        private GroupBox groupChoose;
+        private TreeView treeWeapon;
+        private GroupBox groupDescription;
+        private SplitContainer splitDescription;
+        private Label lDescription;
+        private Button bInteractive;
+        private Label lChoose;
     }
 }
