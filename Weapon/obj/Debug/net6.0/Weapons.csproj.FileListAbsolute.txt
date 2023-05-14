@@ -1,0 +1,12 @@
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\bin\Debug\net6.0\Weapons.deps.json
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\bin\Debug\net6.0\Weapons.dll
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\bin\Debug\net6.0\Weapons.pdb
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\obj\Debug\net6.0\Weapons.csproj.AssemblyReference.cache
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\obj\Debug\net6.0\Weapons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\obj\Debug\net6.0\Weapons.AssemblyInfoInputs.cache
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\obj\Debug\net6.0\Weapons.AssemblyInfo.cs
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\obj\Debug\net6.0\Weapons.csproj.CoreCompileInputs.cache
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\obj\Debug\net6.0\Weapons.dll
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\obj\Debug\net6.0\refint\Weapons.dll
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\obj\Debug\net6.0\Weapons.pdb
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Weapon\obj\Debug\net6.0\ref\Weapons.dll

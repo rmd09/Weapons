@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aLLRw1SRUd/BsUmc5pVXPKddorlLbZvxmyTmZUzc75ThdrWQgSxSl2B+MNxgCaCT7f/RfID9M520tqFHSnslYw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rmd09\\Desktop\\C#\\Libraries\\Weapons\\Interactive\\Interactive.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rmd09\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\bin\Debug\net6.0-windows\Interactive.deps.json
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\bin\Debug\net6.0-windows\Interactive.dll
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\bin\Debug\net6.0-windows\Interactive.pdb
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.csproj.AssemblyReference.cache
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.csproj.GenerateResource.cache
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.AssemblyInfoInputs.cache
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.AssemblyInfo.cs
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.csproj.CoreCompileInputs.cache
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.dll
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\refint\Interactive.dll
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.pdb
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\ref\Interactive.dll
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\bin\Debug\net6.0-windows\Weapons.dll
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\bin\Debug\net6.0-windows\Weapons.pdb
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.FormInteractive.resources
+C:\Users\rmd09\Desktop\C#\Libraries\Weapons\Interactive\obj\Debug\net6.0-windows\Interactive.csproj.CopyComplete

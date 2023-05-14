@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7uPntf0krWtfy1Wad2Qmz/yS9UIHriKGNzEVZ7Qj4nnh4gxIhZfr4Tb+Mg3frekFa+0+XZnBI6ftHwl7CYB/6A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rmd09\\Desktop\\C#\\Libraries\\Weapons\\Weapon\\Weapons.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rmd09\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

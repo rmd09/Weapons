@@ -13,6 +13,7 @@ namespace Weapons
         public override bool IsAutoRechargable => false;
         public override int MagazineSize => 1;
         public override TypePatron TypePatron => TypePatron.BasePatron;
+        public override string DescriptionKey => throw new NotImplementedException();
 
         public Weapon(EventHandler<ShootingArgs> shooting) : base(shooting)
         {

@@ -8,6 +8,7 @@
         int MagazineSize { get; }
         int NumberOfPatrons { get; } //Кол-во патронов в данный момент
         TypePatron TypePatron { get; }
+        string DescriptionKey { get; }
 
         void Shoot();
         void Recharge(); //Перезарядка

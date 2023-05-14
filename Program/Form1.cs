@@ -5,6 +5,7 @@ namespace Program
 {
     public partial class MainForm : Form
     {
+        private const int MAX_CHARS_OF_13_FONT_IN_LDESCRIPTION = 300; //Максимально вмещающееся кол-во символов 13 шрифта в lDescription
         private DescritionEditor descritionEditor;
         private bool isWeaponChoosed = false;
 
@@ -41,12 +42,17 @@ namespace Program
         {
             groupDescription.Text = name;
 
-            lDescription.Text = $"Тип: {weapon.ItemType}\n\nОписание: {weapon.Description}\n\nКалибр: {weapon.Caliber}мм";
+            lDescription.Text = $"Тип: {weapon.ItemType}\n\nОписание: {weapon.Description}\n\nКалибр: {weapon.Caliber}мм\nУрон: {weapon.Damage}\nКол-во патронов в магазине: {weapon.MagazineSize}";
+
+            if (lDescription.Text.Length > MAX_CHARS_OF_13_FONT_IN_LDESCRIPTION)
+                lDescription.Font = new Font("Segoe UI", 11.5f, FontStyle.Bold);
+            else
+                lDescription.Font = new Font("Segoe UI", 13, FontStyle.Bold);
         }
 
         private void bInteractive_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            FormInteractive form = new FormInteractive(descritionEditor.WeaponChoosingNow, treeWeapon.SelectedNode.Text);
             form.ShowDialog();
         }
     }
