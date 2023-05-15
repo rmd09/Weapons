@@ -3,8 +3,9 @@
     public class WebleyRevolver : Revolver
     {
         public override int MagazineSize => 6;
-        public const string descriptionKey = "WebleyRevolver";
-        public override string Description => SetDescription(pathJsonDescription, descriptionKey);
+        public override string DescriptionKey => "WebleyRevolver";
+        public override string Name { get; } = "Револьвер Веблера";
+        public override string Description => SetDescription(pathJsonDescription, DescriptionKey);
 
         public WebleyRevolver(EventHandler<ShootingArgs> shooting) : base(shooting)
         {

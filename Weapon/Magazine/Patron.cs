@@ -10,5 +10,28 @@ namespace Weapons
             Caliber = caliber;
             TypePatron = typePatron;
         }
+
+        public static string GetTypePatronName(TypePatron typePatron)
+        {
+            switch (typePatron)
+            {
+                case TypePatron.BasePatron:
+                    return "Базовый патрон";
+
+                case TypePatron.GunPatron:
+                    return "Пистолетный патрон";
+
+                case TypePatron.RevolverPatron:
+                    return "Револьверный патрон";
+
+                case TypePatron.RiflePatron:
+                    return "Автоматный патрон";
+
+                case TypePatron.MachineGunPatron:
+                    return "Пулемётный патрон";
+            }
+
+            throw new NotImplementedException();
+        }
     }
 }

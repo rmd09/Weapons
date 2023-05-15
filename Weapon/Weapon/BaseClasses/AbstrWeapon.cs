@@ -5,7 +5,7 @@
         public GlobalType GlobalType => GlobalType.Оружие;
         public abstract string ItemType { get; }
         public abstract string Description { get; }
-
+        public abstract string Name { get; }
         public abstract int Damage { get; }
         public abstract float Caliber { get; }
         public abstract bool IsAutoRechargable { get; }
@@ -31,15 +31,16 @@
             if (IsRecharged && NumberOfPatrons > 0)
             {
                 magazine.Shoot();
-                ShootingArgs eventArgs = new ShootingArgs(Damage, TypePatron);
+                ShootingArgs eventArgs = new ShootingArgs(Damage, TypePatron, Name);
                 Shooting(this, eventArgs);
                 NumberOfPatrons--;
-                IsRecharged = IsAutoRechargable ? true : false;
+                IsRecharged = IsAutoRechargable && NumberOfPatrons > 0 ? true : false;
             }
         }
         public void Recharge()
         {
-            IsRecharged = true;
+            if (NumberOfPatrons > 0)
+                IsRecharged = true;
         }
         public void InsertMagazine(Magazine magazine)
         {

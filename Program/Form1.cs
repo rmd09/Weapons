@@ -52,7 +52,7 @@ namespace Program
 
         private void bInteractive_Click(object sender, EventArgs e)
         {
-            FormInteractive form = new FormInteractive(descritionEditor.WeaponChoosingNow, treeWeapon.SelectedNode.Text);
+            FormInteractive form = new FormInteractive(descritionEditor.WeaponChoosingNow);
             form.ShowDialog();
         }
     }

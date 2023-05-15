@@ -29,8 +29,15 @@ namespace Program
         {
             foreach (Weapon weapon in weapons)
             {
-                if (weapon.)
+                if (weapon.DescriptionKey == name)
+                {
+                    WeaponChoosingNow = weapon;
+                    return weapon;
+                }
             }
+
+            WeaponChoosingNow = null;
+            return null;
         }
     }
 }

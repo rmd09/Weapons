@@ -6,8 +6,9 @@ namespace Weapons
     {
         public override int Damage => base.Damage + 7;
         public override int MagazineSize => 8;
-        public const string descriptionKey = "GunMakarova";
-        public override string Description => SetDescription(pathJsonDescription, descriptionKey);
+        public override string DescriptionKey => "GunMakarova";
+        public override string Name { get; } = "Пистолет Макарова";
+        public override string Description => SetDescription(pathJsonDescription, DescriptionKey);
 
         public GunMakarova(EventHandler<ShootingArgs> shooting) : base(shooting)
         {

@@ -4,8 +4,9 @@
     {
         public override int Damage => base.Damage + 10;
         public override int MagazineSize => 10;
-        public const string descriptionKey = "DragunovSniperRifle";
-        public override string Description => SetDescription(pathJsonDescription, descriptionKey);
+        public override string DescriptionKey => "DragunovSniperRifle";
+        public override string Name { get; } = "Снайперская винтовка Драгунова";
+        public override string Description => SetDescription(pathJsonDescription, DescriptionKey);
         public DragunovSniperRifle(EventHandler<ShootingArgs> shooting) : base(shooting)
         {
         }

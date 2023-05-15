@@ -14,6 +14,7 @@ namespace Weapons
         public override int MagazineSize => 1;
         public override TypePatron TypePatron => TypePatron.BasePatron;
         public override string DescriptionKey => throw new NotImplementedException();
+        public override string Name => "Оружие";
 
         public Weapon(EventHandler<ShootingArgs> shooting) : base(shooting)
         {

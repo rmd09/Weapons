@@ -123,7 +123,7 @@
             treeNode9.Text = "Винтовки";
             treeNode10.Name = "AC_VAL";
             treeNode10.Text = "АС Вал";
-            treeNode11.Name = "AK-47";
+            treeNode11.Name = "AK_47";
             treeNode11.Text = "АК-47";
             treeNode12.Name = "AssaultRifles";
             treeNode12.Text = "Автоматы";
