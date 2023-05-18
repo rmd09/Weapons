@@ -36,7 +36,6 @@ namespace Program
                 }
             }
 
-            WeaponChoosingNow = null;
             return null;
         }
     }
