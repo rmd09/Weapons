@@ -1,10 +1,10 @@
-# .vs
-# obj
-# bin
-# /obj
-# /bin
-# Interactive\bin
-# Interactive\obj
-# Program\obj
-# Program\bin
-# !Program\bin\Debug\net6.0-windows\Descriptions.json
+.vs
+obj
+bin
+/obj
+/bin
+Interactive\bin
+Interactive\obj
+Program\obj
+Program\bin
+!Program\bin\Debug\net6.0-windows\Descriptions.json
